@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node style.js"
   },
   "author": "",
   "license": "ISC",
   "jspm": {
+    "dependencies": {
+      "css": "npm:jspm-loader-css@^1.0.1-beta1"
+    },
     "devDependencies": {
       "typescript": "npm:typescript@^1.6.2"
     }
+  },
+  "devDependencies": {
+    "cssnext": "^1.8.4"
   }
 }

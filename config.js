@@ -10,12 +10,6 @@ System.config({
     "npm:*": "jspm_packages/npm/*",
     "github:*": "jspm_packages/github/*"
   },
-  bundles: {
-    "build.js": [
-      "app/index.ts",
-      "app/lib/pokemon_case.ts"
-    ]
-  },
 
   packages: {
     "app": {

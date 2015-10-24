@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node style.js"
+    "start": "live-server",
+    "build-css": "node --harmony style.js -s app/cssnext/style.css -d app/style.css",
+    "watch-css": "node --harmony style.js -s app/cssnext/style.css -d app/style.css -w app/cssnext",
+    "bundle": "jspm bundle app --inject --minify",
+    "unbundle": "jspm unbundle"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +22,8 @@
     }
   },
   "devDependencies": {
-    "cssnext": "^1.8.4"
+    "commander": "^2.9.0",
+    "cssnext": "^1.8.4",
+    "node-watch": "^0.3.4"
   }
 }
